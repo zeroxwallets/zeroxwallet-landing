@@ -124,6 +124,10 @@ td {
 tr:nth-child(even) {
   background-color: #161b22; /* Alternate row color */
 }
+tr:hover {
+  background-color: #1f2d3a; /* Slightly lighter than #161b22 */
+  transition: background-color 0.3s ease;
+}
 table {
   animation: fadeIn 0.4s ease;
 }
