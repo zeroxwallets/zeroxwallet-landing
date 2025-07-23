@@ -115,6 +115,10 @@ th {
 td {
   padding: 12px 16px;
   border-top: 1px solid #333;
+  font-weight: 600;        /* ✅ Bold */
+  font-size: 16px;         /* ✅ Clear size */
+  color: #ffffff;          /* ✅ Bright text */
+  letter-spacing: 0.3px;   /* ✅ Subtle spacing */
 }
 
 tr:nth-child(even) {
