@@ -186,5 +186,43 @@ header {
       <a href="https://t.me/ZeroxWalletAnn" target="_blank">Telegram</a>
     </p>
   </footer>
+  <script>
+// Smooth Scroll for "Explore ZeroxWallet"
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+// Fade-in on Scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".feature-card, .roadmap-item").forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+<style>
+/* Fade-in CSS */
+.feature-card, .roadmap-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.feature-card.visible, .roadmap-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 </body>
 </html>
