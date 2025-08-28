@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZeroxWallet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f1a, #1b1b2f);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 15px 0 25px;
+      color: #ccc;
+    }
+    .cta-button {
+      background: #6c5ce7;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #4834d4;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature-card {
+      background: #222238;
+      padding: 30px;
+      border-radius: 15px;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    .feature-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.4em;
+      color: #6c5ce7;
+    }
+    .roadmap {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .roadmap-item {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #6c5ce7;
+    }
+    .roadmap-item h4 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #6c5ce7;
+    }
+    footer {
+      background: #0d0d17;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    footer p {
+      color: #aaa;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #6c5ce7;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media(max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="ZeroxWallet Logo" />
+    <h1>Privacy-First, Seedless & Gasless Smart Wallet</h1>
+    <p>Experience Web3 without friction. Secure, simple, and built for the next billion users.</p>
+    <a href="#" class="cta-button">Explore ZeroxWallet</a>
+  </header>
+
+  <section>
+    <h2>Our Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Seedless Wallet</h3>
+        <p>No private keys to manage. Simple, secure login with smart recovery.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Gasless Transactions</h3>
+        <p>Say goodbye to unpredictable gas fees. Enjoy smooth onboarding.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Privacy First</h3>
+        <p>Built with privacy at its core to safeguard your digital identity.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multi-Chain Ready</h3>
+        <p>Seamless support for Hedera and future multi-chain integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Roadmap</h2>
+    <div class="roadmap">
+      <div class="roadmap-item">
+        <h4>Phase 1 - Q1 2025</h4>
+        <p>Launch ZeroxWallet MVP on Hedera Testnet.</p>
+      </div>
+      <div class="roadmap-item">
+        <h4>Phase 2 - Q2 2025</h4>
+        <p>Integrate HTS tokens and smart contract interaction.</p>
+      </div>
+      <div class="roadmap-item">
+        <h4>Phase 3 - Q3 2025</h4>
+        <p>Expand to multi-chain support (EVM + Solana).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ZeroxWallet. All rights reserved.</p>
+    <p>
+      <a href="https://x.com/ZeroxWallet" target="_blank">Twitter</a> |
+      <a href="https://github.com/zeroxwallets" target="_blank">GitHub</a> |
+      <a href="https://t.me/ZeroxWalletAnn" target="_blank">Telegram</a>
+    </p>
+  </footer>
+</body>
+</html>
